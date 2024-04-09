@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SaveDataArgs | Save Toolbox </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SaveDataArgs | Save Toolbox ">
+      
+      <meta name="description" content="The save data arguments for saving something to memory. By default this is created by the SaveSettings for game save data. For any custom data you will need to pass in an instance of this class.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Save Toolbox">
+            Save Toolbox
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveToolbox.Runtime.Core.SaveDataArgs">
+
+
+
+  <h1 id="SaveToolbox_Runtime_Core_SaveDataArgs" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs" class="text-break">
+Class SaveDataArgs  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SaveToolbox.html">SaveToolbox</a>.<a class="xref" href="SaveToolbox.Runtime.html">Runtime</a>.<a class="xref" href="SaveToolbox.Runtime.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SaveToolbox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The save data arguments for saving something to memory. By default this is created by the SaveSettings for
+game save data. For any custom data you will need to pass in an instance of this class.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SaveDataArgs</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SaveDataArgs</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs__ctor_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.#ctor*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs__ctor_SaveToolbox_Runtime_Core_SaveSettings_System_Int32_System_String_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.#ctor(SaveToolbox.Runtime.Core.SaveSettings,System.Int32,System.String)">
+  SaveDataArgs(SaveSettings, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveDataArgs(SaveSettings saveSettings, int slotIndex = -1, string customSavePath = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveSettings</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveSettings.html">SaveSettings</a></dt>
+    <dd></dd>
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>customSavePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs__ctor_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.#ctor*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs__ctor_System_String_System_String_System_Int32_SaveToolbox_Runtime_Core_StbSaveAssetType_SaveToolbox_Runtime_Core_EncryptionSettings_SaveToolbox_Runtime_Core_StbCompressionType_SaveToolbox_Runtime_Serialization_StbJsonSerializer_SaveToolbox_Runtime_Serialization_StbBinarySerializer_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.#ctor(System.String,System.String,System.Int32,SaveToolbox.Runtime.Core.StbSaveAssetType,SaveToolbox.Runtime.Core.EncryptionSettings,SaveToolbox.Runtime.Core.StbCompressionType,SaveToolbox.Runtime.Serialization.StbJsonSerializer,SaveToolbox.Runtime.Serialization.StbBinarySerializer)">
+  SaveDataArgs(string, string, int, StbSaveAssetType, EncryptionSettings, StbCompressionType, StbJsonSerializer, StbBinarySerializer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveDataArgs(string saveDataName = null, string customSavePath = null, int slotIndex = -1, StbSaveAssetType assetType = StbSaveAssetType.Json, EncryptionSettings encryptionSettings = null, StbCompressionType compressionType = StbCompressionType.None, StbJsonSerializer customJsonSerializer = null, StbBinarySerializer customBinarySerializer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>customSavePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>assetType</code> <a class="xref" href="SaveToolbox.Runtime.Core.StbSaveAssetType.html">StbSaveAssetType</a></dt>
+    <dd></dd>
+    <dt><code>encryptionSettings</code> <a class="xref" href="SaveToolbox.Runtime.Core.EncryptionSettings.html">EncryptionSettings</a></dt>
+    <dd></dd>
+    <dt><code>compressionType</code> <a class="xref" href="SaveToolbox.Runtime.Core.StbCompressionType.html">StbCompressionType</a></dt>
+    <dd></dd>
+    <dt><code>customJsonSerializer</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializer.html">StbJsonSerializer</a></dt>
+    <dd></dd>
+    <dt><code>customBinarySerializer</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.StbBinarySerializer.html">StbBinarySerializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_AssetType_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.AssetType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_AssetType" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.AssetType">
+  AssetType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>What type of file should be created, JSON or Binary?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StbSaveAssetType AssetType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.StbSaveAssetType.html">StbSaveAssetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_CompressionType_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CompressionType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_CompressionType" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CompressionType">
+  CompressionType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>What type of compression should be used, if any?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StbCompressionType CompressionType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.StbCompressionType.html">StbCompressionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomBinarySerializer_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomBinarySerializer*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomBinarySerializer" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomBinarySerializer">
+  CustomBinarySerializer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A custom binary serializer if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StbBinarySerializer CustomBinarySerializer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Serialization.StbBinarySerializer.html">StbBinarySerializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomJsonSerializer_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomJsonSerializer*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomJsonSerializer" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomJsonSerializer">
+  CustomJsonSerializer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A custom json serializer if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StbJsonSerializer CustomJsonSerializer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializer.html">StbJsonSerializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomSavePath_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomSavePath*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_CustomSavePath" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.CustomSavePath">
+  CustomSavePath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A custom save path for the file if it should have one. Relative to the persistant data path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomSavePath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_EncryptionSettings_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.EncryptionSettings*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_EncryptionSettings" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.EncryptionSettings">
+  EncryptionSettings
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>What type of encryption should be used, if any?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptionSettings EncryptionSettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.EncryptionSettings.html">EncryptionSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_SaveDataName_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.SaveDataName*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_SaveDataName" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.SaveDataName">
+  SaveDataName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveDataName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveDataArgs_SlotIndex_" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.SlotIndex*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveDataArgs_SlotIndex" data-uid="SaveToolbox.Runtime.Core.SaveDataArgs.SlotIndex">
+  SlotIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The slot the data should be saved in, defaults to -1 which is no slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SlotIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

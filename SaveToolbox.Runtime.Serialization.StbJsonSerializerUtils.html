@@ -1,0 +1,1038 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StbJsonSerializerUtils | Save Toolbox </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StbJsonSerializerUtils | Save Toolbox ">
+      
+      <meta name="description" content="A static utils class in Save Toolbox that provides various helpful functions.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Save Toolbox">
+            Save Toolbox
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils">
+
+
+
+  <h1 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils" class="text-break">
+Class StbJsonSerializerUtils  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SaveToolbox.html">SaveToolbox</a>.<a class="xref" href="SaveToolbox.Runtime.html">Runtime</a>.<a class="xref" href="SaveToolbox.Runtime.Serialization.html">Serialization</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SaveToolbox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A static utils class in Save Toolbox that provides various helpful functions.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StbJsonSerializerUtils</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StbJsonSerializerUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ApplyDepth_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.ApplyDepth*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ApplyDepth_System_Text_StringBuilder_System_Int32_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.ApplyDepth(System.Text.StringBuilder,System.Int32)">
+  ApplyDepth(StringBuilder, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies depth for the JSON serializer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyDepth(StringBuilder stringBuilder, int depth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The json serializer string builder.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The current depth.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsBool_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsBool*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsBool_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsBool(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsBool(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AsBool(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsByte_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsByte*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsByte_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsByte(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsByte(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte AsByte(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsChar_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsChar*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsChar_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsChar(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsChar(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char AsChar(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsDecimal_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsDecimal*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsDecimal_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsDecimal(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsDecimal(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static decimal AsDecimal(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsDouble_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsDouble*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsDouble_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsDouble(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsDouble(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AsDouble(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsFloat_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsFloat*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsFloat_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsFloat(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsFloat(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float AsFloat(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsInt_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsInt*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsInt_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsInt(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsInt(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AsInt(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsLong_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsLong*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsLong_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsLong(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsLong(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long AsLong(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsSbyte_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsSbyte*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsSbyte_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsSbyte(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsSbyte(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static sbyte AsSbyte(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsShort_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsShort*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsShort_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsShort(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsShort(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short AsShort(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsString_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsString*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsString_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsString(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsString(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AsString(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUint_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUint*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUint_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUint(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsUint(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AsUint(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUlong_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUlong*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUlong_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUlong(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsUlong(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong AsUlong(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUshort_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUshort*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_AsUshort_SaveToolbox_Runtime_Serialization_JsonSimpleNode_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.AsUshort(SaveToolbox.Runtime.Serialization.JsonSimpleNode)">
+  AsUshort(JsonSimpleNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ushort AsUshort(this JsonSimpleNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.ConvertPrimitive*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.ConvertPrimitive(System.Object,System.Type)">
+  ConvertPrimitive(object, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object to the correct primitive if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object ConvertPrimitive(this object valueToConvert, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueToConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to try convert to a primitive.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The converted object, if it was successful.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_DeserializePrimitiveType_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.DeserializePrimitiveType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_DeserializePrimitiveType_System_String_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.DeserializePrimitiveType(System.String)">
+  DeserializePrimitiveType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializePrimitiveType(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_GetPrimitiveType_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.GetPrimitiveType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_GetPrimitiveType_System_String_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.GetPrimitiveType(System.String)">
+  GetPrimitiveType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string value to a primitive if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetPrimitiveType(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The primitive value of the string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsPrimitiveType_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsPrimitiveType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsPrimitiveType_System_Object_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsPrimitiveType(System.Object)">
+  IsPrimitiveType(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is the type of the object a primitive such as a bool or an int etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrimitiveType(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object whose type should be checked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the passed in object is a primitive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsPrimitiveType_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsPrimitiveType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsPrimitiveType_System_Type_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsPrimitiveType(System.Type)">
+  IsPrimitiveType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a type is a primitive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrimitiveType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be checked if it is primitive.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If it is primitive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsTypeSerializableList_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsTypeSerializableList*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_IsTypeSerializableList_System_Type_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.IsTypeSerializableList(System.Type)">
+  IsTypeSerializableList(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is the type a serializable list?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeSerializableList(this Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type that is to be checked if it serializable list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If it is a serializable list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_TryGetFormerType_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.TryGetFormerType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_TryGetFormerType_System_String_System_Type__" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.TryGetFormerType(System.String,System.Type@)">
+  TryGetFormerType(string, out Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to get the former type of a StbFormerlySerializedAs class/struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetFormerType(string typeString, out Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Current type.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Former type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>if it was successful</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_TryGetFormerTypeString_" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.TryGetFormerTypeString*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_TryGetFormerTypeString_System_Type_System_String__" data-uid="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.TryGetFormerTypeString(System.Type,System.String@)">
+  TryGetFormerTypeString(Type, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to get the former type of a StbFormerlySerializedAs class/struct in the form of a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetFormerTypeString(Type type, out string typeString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Current type.</p>
+</dd>
+    <dt><code>typeString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Former type as a string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If it was successful</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
