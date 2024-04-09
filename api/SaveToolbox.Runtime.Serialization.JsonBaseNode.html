@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JsonBaseNode | Save Toolbox </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JsonBaseNode | Save Toolbox ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Save Toolbox">
+            Save Toolbox
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode">
+
+
+
+  <h1 id="SaveToolbox_Runtime_Serialization_JsonBaseNode" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode" class="text-break">
+Class JsonBaseNode  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SaveToolbox.html">SaveToolbox</a>.<a class="xref" href="SaveToolbox.Runtime.html">Runtime</a>.<a class="xref" href="SaveToolbox.Runtime.Serialization.html">Serialization</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SaveToolbox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JsonBaseNode</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JsonBaseNode</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SaveToolbox.Runtime.Serialization.CompoundNode.html">CompoundNode</a></div>
+      <div><a class="xref" href="SaveToolbox.Runtime.Serialization.JsonSimpleNode.html">JsonSimpleNode</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_STB_ASSEMBLY_TYPE" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.STB_ASSEMBLY_TYPE">
+  STB_ASSEMBLY_TYPE
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string STB_ASSEMBLY_TYPE = &quot;StbTypeAssembly&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_Name_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.Name*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_Name" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_GetUnderlyingNodeCount_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.GetUnderlyingNodeCount*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_GetUnderlyingNodeCount" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.GetUnderlyingNodeCount">
+  GetUnderlyingNodeCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetUnderlyingNodeCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValue_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValue*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValue_System_Type_SaveToolbox_Runtime_Serialization_JsonBaseNode_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValue(System.Type,SaveToolbox.Runtime.Serialization.JsonBaseNode)">
+  NodeToValue(Type, JsonBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a node and it's enclosed data into the type that is passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object NodeToValue(Type type, JsonBaseNode baseNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The requested type.</p>
+</dd>
+    <dt><code>baseNode</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a></dt>
+    <dd><p>The node which contains the data to build the type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An object of the specified type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValueAsync_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValueAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValueAsync_System_Type_SaveToolbox_Runtime_Serialization_JsonBaseNode_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValueAsync(System.Type,SaveToolbox.Runtime.Serialization.JsonBaseNode)">
+  NodeToValueAsync(Type, JsonBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;object&gt; NodeToValueAsync(Type type, JsonBaseNode baseNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>baseNode</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValueAsync_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValueAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValueAsync__1_SaveToolbox_Runtime_Serialization_JsonBaseNode_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValueAsync``1(SaveToolbox.Runtime.Serialization.JsonBaseNode)">
+  NodeToValueAsync&lt;T&gt;(JsonBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; NodeToValueAsync&lt;T&gt;(JsonBaseNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValue_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValue*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_NodeToValue__1_SaveToolbox_Runtime_Serialization_JsonBaseNode_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.NodeToValue``1(SaveToolbox.Runtime.Serialization.JsonBaseNode)">
+  NodeToValue&lt;T&gt;(JsonBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T NodeToValue&lt;T&gt;(JsonBaseNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_Render_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.Render*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_Render_System_Text_StringBuilder_System_Boolean_System_Int32_System_Boolean_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.Render(System.Text.StringBuilder,System.Boolean,System.Int32,System.Boolean)">
+  Render(StringBuilder, bool, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string Render(StringBuilder stringBuilder, bool prettyPrint = true, int depth = 0, bool typeSerialization = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd></dd>
+    <dt><code>prettyPrint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>typeSerialization</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_RenderAsync_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.RenderAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_RenderAsync_System_Text_StringBuilder_System_Boolean_System_Int32_System_Boolean_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.RenderAsync(System.Text.StringBuilder,System.Boolean,System.Int32,System.Boolean)">
+  RenderAsync(StringBuilder, bool, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;string&gt; RenderAsync(StringBuilder stringBuilder, bool prettyPrint = true, int depth = 0, bool typeSerialization = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd></dd>
+    <dt><code>prettyPrint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>typeSerialization</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_TryGetType_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.TryGetType*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_TryGetType_System_Type__" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.TryGetType(System.Type@)">
+  TryGetType(out Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool TryGetType(out Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_ValueToNode_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.ValueToNode*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_ValueToNode_System_Object_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.ValueToNode(System.Object)">
+  ValueToNode(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonBaseNode ValueToNode(object objectValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Serialization_JsonBaseNode_ValueToNodeAsync_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.ValueToNodeAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Serialization_JsonBaseNode_ValueToNodeAsync_System_Object_" data-uid="SaveToolbox.Runtime.Serialization.JsonBaseNode.ValueToNodeAsync(System.Object)">
+  ValueToNodeAsync(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JsonBaseNode&gt; ValueToNodeAsync(object objectValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="SaveToolbox.Runtime.Serialization.JsonBaseNode.html">JsonBaseNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

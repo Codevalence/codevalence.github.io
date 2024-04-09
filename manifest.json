@@ -1,0 +1,1298 @@
+{
+  "source_base_path": "C:/Users/beddo/Documents/UnityProjects/PackageTesting/Assets/Plugins/SaveToolbox/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Attributes.FieldsSelectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Attributes.FieldsSelectionAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Attributes.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Attributes.ReadOnlyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Attributes.StbFormerlySerializedAs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Attributes.StbFormerlySerializedAs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Attributes.UniqueGuidAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Attributes.UniqueGuidAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.AudioSourceSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.AudioSourceSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CameraSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CameraSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CanvasGroupSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CanvasGroupSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CustomComponentHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CustomComponentHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CustomSaveBehaviourData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.CustomSaveBehaviourData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.ImageSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.ImageSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.LightSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.LightSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.LineRendererSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.LineRendererSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.NavMeshAgentSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.NavMeshAgentSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.ParticleSystemSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.ParticleSystemSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.Rigidbody2DSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.Rigidbody2DSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.RigidbodySaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.RigidbodySaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.SpriteRendererSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.SpriteRendererSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbAudioSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCanvasGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCanvasGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCustomComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbCustomComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbDropdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbDropdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbGameObjectActive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbGameObjectActive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbHierarchy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbHierarchy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbLight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbLight.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbLineRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbLineRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbNavMeshAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbNavMeshAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbParticleSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbParticleSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbRigidBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbRigidBody.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbRigidBody2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbRigidBody2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbSpriteRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbSpriteRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTextField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTextField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbToggle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTrailRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTrailRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.StbTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TextFieldSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TextFieldSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TrailRendererSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TrailRendererSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TransformSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.TransformSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.BasicSaveableMonoBehaviours.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.IStbLoadedCallbackHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.IStbLoadedCallbackHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.IStbSavedCallbackHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.IStbSavedCallbackHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.StbCallbackDistributor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.StbCallbackDistributor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.CallbackHandlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.AbstractSaveMigrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.AbstractSaveMigrator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.EncryptionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.EncryptionSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectDatabase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectEntitySaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectEntitySaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadableObjectSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.LoadingState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.LoadingState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveDataArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveDataArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveMetaData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveMetaData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveSystemAutoSaver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveSystemAutoSaver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveSystemController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveSystemController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SaveableMonoBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SaveableMonoBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SavingState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SavingState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SceneSavingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SceneSavingType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.ScriptLibraryInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.ScriptLibraryInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.SlotSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.SlotSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.StbCompressionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.StbCompressionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.StbEncryptionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.StbEncryptionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.StbSaveAssetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.StbSaveAssetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.CustomComponentTestBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.CustomComponentTestBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.CustomSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.CustomSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.CustomSaveFileExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.CustomSaveFileExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleCustomComponentInheritance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleCustomComponentInheritance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleJsonSerializerChild.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleJsonSerializerChild.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleLoadingBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleLoadingBar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleLoadingScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleLoadingScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleNonMonoBehaviourOptionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleNonMonoBehaviourOptionsData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveMigrationMonoBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveMigrationMonoBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveMigrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveMigrator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.ExampleSaveUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.MonoBehaviourCallbackExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.MonoBehaviourCallbackExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.NonMonoBehaviourCallbackExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.NonMonoBehaviourCallbackExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.PreviouslySerializedAsExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.PreviouslySerializedAsExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.PreviouslySerializedAsExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.PreviouslySerializedAsExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.EventSystemSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.EventSystemSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.GameController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.GameController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.InGameUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.InGameUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceRock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceRock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterPlayerCollision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterPlayerCollision.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterPlayerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterPlayerController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterProjectile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.SpaceShooterProjectile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.SpaceShooterExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.TestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.TestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Example.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Example.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Interfaces.ISaveDataEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Interfaces.ISaveDataEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Interfaces.ISaveEntityLifecycle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Interfaces.ISaveEntityLifecycle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Interfaces.SaveEntityObjectData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Interfaces.SaveEntityObjectData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.CompoundNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.CompoundNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.JsonArrayNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.JsonArrayNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.JsonBaseNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.JsonBaseNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.JsonObjectNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.JsonObjectNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.JsonSimpleNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.JsonSimpleNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbBinarySerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbBinarySerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.FormerlySerializedAsDataContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.FormerlySerializedAsDataContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbSaveCompression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbSaveCompression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.StbSaveEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.StbSaveEncryption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Serialization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.IAssetPathProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.IAssetPathProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.SaveToolboxSurrogateSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.SaveToolboxSurrogateSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.SerializableDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.SerializableDictionary-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.StbSingletonScriptableObject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.StbSingletonScriptableObject-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.StbUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.StbUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.Vector2SerializationSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.Vector2SerializationSurrogate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.Vector3SerializationSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.Vector3SerializationSurrogate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.Vector4SerializationSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.Vector4SerializationSurrogate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveToolbox.Runtime.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveToolbox.Runtime.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manuals/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/toc.html"
+        },
+        ".json": {
+          "relative_path": "manuals/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SaveSystem | Save Toolbox </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SaveSystem | Save Toolbox ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Save Toolbox">
+            Save Toolbox
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveToolbox.Runtime.Core.SaveSystem">
+
+
+
+  <h1 id="SaveToolbox_Runtime_Core_SaveSystem" data-uid="SaveToolbox.Runtime.Core.SaveSystem" class="text-break">
+Class SaveSystem  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SaveToolbox.html">SaveToolbox</a>.<a class="xref" href="SaveToolbox.Runtime.html">Runtime</a>.<a class="xref" href="SaveToolbox.Runtime.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SaveToolbox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class SaveSystem</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SaveSystem</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializerUtils.html#SaveToolbox_Runtime_Serialization_StbJsonSerializerUtils_ConvertPrimitive_System_Object_System_Type_">StbJsonSerializerUtils.ConvertPrimitive(object, Type)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_binarySerializer" data-uid="SaveToolbox.Runtime.Core.SaveSystem.binarySerializer">
+  binarySerializer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StbBinarySerializer binarySerializer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Serialization.StbBinarySerializer.html">StbBinarySerializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_jsonSerializer" data-uid="SaveToolbox.Runtime.Core.SaveSystem.jsonSerializer">
+  jsonSerializer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StbJsonSerializer jsonSerializer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Serialization.StbJsonSerializer.html">StbJsonSerializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_saveMigrator" data-uid="SaveToolbox.Runtime.Core.SaveSystem.saveMigrator">
+  saveMigrator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AbstractSaveMigrator saveMigrator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.AbstractSaveMigrator.html">AbstractSaveMigrator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_CurrentSlotSaveData_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.CurrentSlotSaveData*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_CurrentSlotSaveData" data-uid="SaveToolbox.Runtime.Core.SaveSystem.CurrentSlotSaveData">
+  CurrentSlotSaveData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlotSaveData CurrentSlotSaveData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.SlotSaveData.html">SlotSaveData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_Instance_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.Instance*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_Instance" data-uid="SaveToolbox.Runtime.Core.SaveSystem.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SaveSystem Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.SaveSystem.html">SaveSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_LoadingState_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadingState*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_LoadingState" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadingState">
+  LoadingState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoadingState LoadingState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.LoadingState.html">LoadingState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_SavingState_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.SavingState*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_SavingState" data-uid="SaveToolbox.Runtime.Core.SaveSystem.SavingState">
+  SavingState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SavingState SavingState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.SavingState.html">SavingState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_StbCallbackDistributor_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.StbCallbackDistributor*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_StbCallbackDistributor" data-uid="SaveToolbox.Runtime.Core.SaveSystem.StbCallbackDistributor">
+  StbCallbackDistributor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StbCallbackDistributor StbCallbackDistributor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.CallbackHandlers.StbCallbackDistributor.html">StbCallbackDistributor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_AddSaveGameDataEntities_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.AddSaveGameDataEntities*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_AddSaveGameDataEntities_SaveToolbox_Runtime_Interfaces_ISaveDataEntity___" data-uid="SaveToolbox.Runtime.Core.SaveSystem.AddSaveGameDataEntities(SaveToolbox.Runtime.Interfaces.ISaveDataEntity[])">
+  AddSaveGameDataEntities(ISaveDataEntity[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add array of entities to the objects that will be saved list. This is for ISaveDataEntities that do not inherit
+from MonoBehaviours are they cannot be found by the FindObjectsOfType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddSaveGameDataEntities(ISaveDataEntity[] saveDataEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataEntities</code> <a class="xref" href="SaveToolbox.Runtime.Interfaces.ISaveDataEntity.html">ISaveDataEntity</a>[]</dt>
+    <dd><p>The entities that will be added to the list to be saved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_AddSaveGameDataEntity_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.AddSaveGameDataEntity*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_AddSaveGameDataEntity_SaveToolbox_Runtime_Interfaces_ISaveDataEntity_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.AddSaveGameDataEntity(SaveToolbox.Runtime.Interfaces.ISaveDataEntity)">
+  AddSaveGameDataEntity(ISaveDataEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an entity to the objects that will be saved list. This is for ISaveDataEntities that do not inherit
+from MonoBehaviours as they cannot be found by the FindObjectsOfType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddSaveGameDataEntity(ISaveDataEntity saveDataEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataEntity</code> <a class="xref" href="SaveToolbox.Runtime.Interfaces.ISaveDataEntity.html">ISaveDataEntity</a></dt>
+    <dd><p>The entity that will be added to the list to be saved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_Finalize_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.Finalize*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_Finalize" data-uid="SaveToolbox.Runtime.Core.SaveSystem.Finalize">
+  ~SaveSystem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~SaveSystem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_GetSaveDefaultFileDirectory_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSaveDefaultFileDirectory*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_GetSaveDefaultFileDirectory_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSaveDefaultFileDirectory(SaveToolbox.Runtime.Core.SaveDataArgs)">
+  GetSaveDefaultFileDirectory(SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSaveDefaultFileDirectory(SaveDataArgs saveDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_GetSaveMetaDataInSlot_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSaveMetaDataInSlot*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_GetSaveMetaDataInSlot_System_Int32_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSaveMetaDataInSlot(System.Int32)">
+  GetSaveMetaDataInSlot(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the meta data for a save in a slot index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveMetaData GetSaveMetaDataInSlot(int slotIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The slot index to get the meta data from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.SaveMetaData.html">SaveMetaData</a></dt>
+    <dd><p>The save meta data in the slot index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_GetSlotSaveDefaultFilePath_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSlotSaveDefaultFilePath*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_GetSlotSaveDefaultFilePath_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.GetSlotSaveDefaultFilePath(SaveToolbox.Runtime.Core.SaveDataArgs)">
+  GetSlotSaveDefaultFilePath(SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the save file path for a specific slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSlotSaveDefaultFilePath(SaveDataArgs saveDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd><p>Save data arguments.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The save file path for the index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_LoadAllSaveGameMetaDatas_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadAllSaveGameMetaDatas*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_LoadAllSaveGameMetaDatas_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadAllSaveGameMetaDatas(SaveToolbox.Runtime.Core.SaveDataArgs)">
+  LoadAllSaveGameMetaDatas(SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load all meta datas from all save slots. Save slots are directories.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveMetaData[] LoadAllSaveGameMetaDatas(SaveDataArgs saveDataArgs = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveToolbox.Runtime.Core.SaveMetaData.html">SaveMetaData</a>[]</dt>
+    <dd><p>An array of Meta Datas for all save slot datas. This can be used when showing simple data for loading slot datas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_LoadOrCreateNewSaveGame_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadOrCreateNewSaveGame*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_LoadOrCreateNewSaveGame_System_Int32_SaveToolbox_Runtime_Core_SaveMetaData_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadOrCreateNewSaveGame(System.Int32,SaveToolbox.Runtime.Core.SaveMetaData)">
+  LoadOrCreateNewSaveGame(int, SaveMetaData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to load a save and if fails it will create a new save data. This will load the main STBSaveFile NOT any
+custom forms of save files that have been saved into a slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadOrCreateNewSaveGame(int slotIndex, SaveMetaData saveMetaData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Slot index to try load from.</p>
+</dd>
+    <dt><code>saveMetaData</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveMetaData.html">SaveMetaData</a></dt>
+    <dd><p>Meta data to create the new save from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_LoadSaveData_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadSaveData*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_LoadSaveData__1_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.LoadSaveData``1(SaveToolbox.Runtime.Core.SaveDataArgs)">
+  LoadSaveData&lt;T&gt;(SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load the data in the slot index into the current slot save data. Also applies the loaded data to all MonoBehaviour ISaveDataEntities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T LoadSaveData&lt;T&gt;(SaveDataArgs saveDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd><p>Save data arguments.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Unknown file type.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_RemoveSaveGameDataEntities_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.RemoveSaveGameDataEntities*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_RemoveSaveGameDataEntities_System_Collections_Generic_IEnumerable_SaveToolbox_Runtime_Interfaces_ISaveDataEntity__" data-uid="SaveToolbox.Runtime.Core.SaveSystem.RemoveSaveGameDataEntities(System.Collections.Generic.IEnumerable{SaveToolbox.Runtime.Interfaces.ISaveDataEntity})">
+  RemoveSaveGameDataEntities(IEnumerable&lt;ISaveDataEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a collection of ISaveDataEntities from the list of objects that will be saved. This is for ISaveDataEntities that do not inherit
+from MonoBehaviours are they cannot be found by the FindObjectsOfType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveSaveGameDataEntities(IEnumerable&lt;ISaveDataEntity&gt; saveDataEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SaveToolbox.Runtime.Interfaces.ISaveDataEntity.html">ISaveDataEntity</a>&gt;</dt>
+    <dd><p>The ISaveDataEntity collection that will be removed from the object to save list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_RemoveSaveGameDataEntity_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.RemoveSaveGameDataEntity*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_RemoveSaveGameDataEntity_SaveToolbox_Runtime_Interfaces_ISaveDataEntity_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.RemoveSaveGameDataEntity(SaveToolbox.Runtime.Interfaces.ISaveDataEntity)">
+  RemoveSaveGameDataEntity(ISaveDataEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a ISaveDataEntity from the list of objects that will be saved. This is for ISaveDataEntities that do not inherit
+from MonoBehaviours are they cannot be found by the FindObjectsOfType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveSaveGameDataEntity(ISaveDataEntity saveDataEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveDataEntity</code> <a class="xref" href="SaveToolbox.Runtime.Interfaces.ISaveDataEntity.html">ISaveDataEntity</a></dt>
+    <dd><p>The ISaveDataEntity that will be removed from the object to save list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TryCreateSaveData_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryCreateSaveData*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TryCreateSaveData_System_Object_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryCreateSaveData(System.Object,SaveToolbox.Runtime.Core.SaveDataArgs)">
+  TryCreateSaveData(object, SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates serialized save data. Also applies any encryption and compression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCreateSaveData(object saveObject, SaveDataArgs saveDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object which you would like to save.</p>
+</dd>
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd><p>Defines the settings in which the save data will be created with.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether or not it successfully created the save data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TryCreateSaveDataAsync_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryCreateSaveDataAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TryCreateSaveDataAsync_System_Object_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryCreateSaveDataAsync(System.Object,SaveToolbox.Runtime.Core.SaveDataArgs)">
+  TryCreateSaveDataAsync(object, SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TryCreateSaveDataAsync(object saveObject, SaveDataArgs saveDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TryDeleteSaveInSlot_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryDeleteSaveInSlot*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TryDeleteSaveInSlot_System_Int32_SaveToolbox_Runtime_Core_SaveDataArgs_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryDeleteSaveInSlot(System.Int32,SaveToolbox.Runtime.Core.SaveDataArgs)">
+  TryDeleteSaveInSlot(int, SaveDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Try to delete the data in a save slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDeleteSaveInSlot(int slotIndex = 1, SaveDataArgs saveDataArgs = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the slot you want to try delete data from.</p>
+</dd>
+    <dt><code>saveDataArgs</code> <a class="xref" href="SaveToolbox.Runtime.Core.SaveDataArgs.html">SaveDataArgs</a></dt>
+    <dd><p>The args to define which save slot should be deleted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether or not it was successful in deleting data from the slot index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TryLoadGame_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryLoadGame*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TryLoadGame_System_Int32_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryLoadGame(System.Int32)">
+  TryLoadGame(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Try to load the data in the slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryLoadGame(int slotIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the slot. Defaults to 0.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether or not the data in slot index was able to be loaded correctly.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TryLoadGameAsync_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryLoadGameAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TryLoadGameAsync_System_Int32_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TryLoadGameAsync(System.Int32)">
+  TryLoadGameAsync(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TryLoadGameAsync(int slotIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TrySaveGame_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TrySaveGame*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TrySaveGame_System_Int32_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TrySaveGame(System.Int32)">
+  TrySaveGame(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to save all ISaveDataEntities. This includes any added to the save data objects list
+as well as any ISaveDataEntities that inherit from MonoBehaviours including Loadable Objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySaveGame(int saveSlotIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveSlotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Save slot index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether it could successfully save.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveToolbox_Runtime_Core_SaveSystem_TrySaveGameAsync_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TrySaveGameAsync*"></a>
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_TrySaveGameAsync_System_Int32_" data-uid="SaveToolbox.Runtime.Core.SaveSystem.TrySaveGameAsync(System.Int32)">
+  TrySaveGameAsync(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TrySaveGameAsync(int saveSlotIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveSlotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_OnLoadingStateChanged" data-uid="SaveToolbox.Runtime.Core.SaveSystem.OnLoadingStateChanged">
+  OnLoadingStateChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;LoadingState&gt; OnLoadingStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SaveToolbox.Runtime.Core.LoadingState.html">LoadingState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="SaveToolbox_Runtime_Core_SaveSystem_OnSavingStateChanged" data-uid="SaveToolbox.Runtime.Core.SaveSystem.OnSavingStateChanged">
+  OnSavingStateChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SavingState&gt; OnSavingStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SaveToolbox.Runtime.Core.SavingState.html">SavingState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
