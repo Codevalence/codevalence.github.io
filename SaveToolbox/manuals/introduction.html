@@ -5,18 +5,18 @@
       <title>Introduction | Save Toolbox </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Introduction | Save Toolbox ">
-      
-      
+
+
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-      
+
       <meta name="docfx:rel" content="../">
-      
-      
-      
+
+
+
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -86,7 +86,411 @@
 
         <article data-uid="">
 <h1 id="introduction">Introduction</h1>
+          <p>
+            Firstly, I would like to thank you for purchasing the package and choosing my tool for your save solution. I hope the package is suitable for your needs but should there be any issues or if you have any ideas for further improvement, please do not hesitate to contact me at: <span style="text-decoration:underline;">codevalence<a href="mailto:email@mail.com">@outlook.com</a></span>. Thanks again!
+          </p>
+          <h2>Quick Start Guide</h2>
 
+
+          <ol>
+
+            <li>Download the project after purchasing it from the Unity Asset store.
+
+            <li>Once downloaded, drag the SaveToolbox.json file into your unity project.
+
+            <li>You should be greeted with an import window. Ensure all files are selected for import.
+
+            <li>Once imported, the save settings file and the loadable object database should be auto generated in a resources folder. Feel free to adjust the settings (Tools -> SaveToolbox <strong>OR </strong>the SaveSettings scriptable object) and check out any of the example scenes in the package.
+
+            <li>Once the settings are to your liking, apply any of the MonoBehaviour save components to their relative counterparts. It is recommended to use the StbCustomComponent to save data on any custom components you have made or any components that don’t have a relevant save component.
+
+            <li>You can put the save controller in the scene. To call the save and load functions on the scene objects. You may however want to call save and load from your own custom scripts, this is also possible.
+
+            <li>Press play and test out the save and load functions on the save controller to see if it saves correctly.
+            </li>
+          </ol>
+          <h2>Saving Data</h2>
+
+
+          <p>
+            Typically you will want to call the save and load functions yourself. Such as you have a custom save/load menu in your game. There are functions on the save system that are used for this:
+          </p>
+          <ul>
+
+            <li>TrySaveGame(int saveSlotIndex);
+
+            <li>TrySaveGameAsync(int saveSlotIndex);
+
+            <li>TryLoadGame(int saveSlotIndex);
+
+            <li>TryLoadGameAsync(int saveSlotIndex);
+            </li>
+          </ul>
+          <p>
+            The async versions of the load and save games will perform asynchronously which will spread the saving and loading over a couple of frames instead of all in 1 frame avoiding any lag spikes. You can also set a minimum frame rate in the settings for these asynchronous saving and loading. There are also some simple components that can help with the auto saving of data in the game. One of these is the Save System Controller. This component has buttons on it to save data from the editor, note this will have no ability to save in a build due to it only being able to be interacted with through the inspector.
+          </p>
+          <h2>Loading Objects into the scene</h2>
+
+
+          <p>
+            In order to load an object into the scene which was spawned in the last playthrough when it was saved, you will need to ensure the object was a prefab with a LoadableObject script on it. You will also need to ensure this prefab is present in the LoadableObjectDatabase. This can be done by pressing Refresh on it or in the case refresh doesn’t work you can press rebuild (This should only be used in situations where it is broken, see LoadableObjectDatabase section for a detailed explanation). Ensure that any custom data on your loadable object that you want to be loaded has its own saving component made by you <strong>or </strong>uses StbCustomComponent <strong>or </strong>a specific StbMonobehaviourComponent.
+          </p>
+          <h2>ISaveDataEntity</h2>
+
+
+          <p>
+            ISaveDataEntity is an interface that has the API of saveable objects in the Save Toolbox. They are what the system works off of, all of the MonoBehaviours and class instances that are collected when the game is saved are ISaveDataEntities.
+          </p>
+          <p>
+            It has a “string Identifier”, if you are creating a custom class you must ensure that any instance of it generates itself a unique identifier, as the identifier is what determines where the data goes when loaded. If you are creating a MonoBehaviour it will be collected by the save system automatically however if you create an instance of a class the system has no way to find it so you should add it to the static list in the SaveSystem. When creating instances that aren’t MonoBehaviour please ensure to set the Identifier to something unique.
+          </p>
+          <p>
+            It also caches the LoadableObjectId which store which loadable object it belongs to if it was spawned into the scene at runtime. There are also the Serialize and Deserialize functions on this interface that will need to be implemented that dictate how the data will be handled, which is explained in a further section <a href="#heading=h.uyivrexnpbnw">here</a>.
+          </p>
+          <p>
+
+            <img src="images/image1.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h2>SaveableMonoBehaviour</h2>
+
+
+          <p>
+            The saveable MonoBehaviour is a helper class that can be inherited from instead of MonoBehaviour that implements the ISaveDataEntity API. It auto generates a unique identifier for you when it is instantiated as well as caching if it is part of a loadable object. It will also auto set itself within the Loadable object, it is <strong>highly</strong> recommended to use this if creating custom MonoBehaviours that save data. It will require you however to override the Serialize and Deserialize functions which will determine how you handle the data on the component. If you have a custom component that you want to add custom saving to that inherits from MonoBehaviour just replace MonoBehaviour with SaveableMonoBehaviour and it should work nicely.
+          </p>
+          <p>
+
+            <img src="images/image2.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h3>Serialize</h3>
+
+
+          <p>
+            The serialize function <strong>public override object Serialize()</strong>. It expects an object that will be serializable to be returned. All primitives are serializable by default, if a type is returned that doesn’t have custom serialization functionality it will then go through each serializable field of the type and collect the data off of it. As an example I will show how the StbTransform component works below.
+          </p>
+          <p>
+            Custom data classes are a good way to store data for different objects, however some classes you will be able to just inherit from SaveableMonoBehaviour or implement the ISaveDataEntity interface and as long as it is serializable and has public getters/setters for data it can be gathered and reapplied.
+          </p>
+          <p>
+            We have a custom class <strong>TransformSaveData</strong> that is Serializable. It holds data such as position rotation and scale as well as a boolean that determines if it should save this data. When serializing this class instance is just returned with all the data set on it.
+          </p>
+          <p>
+
+            <img src="images/image3.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h3>Deserialize</h3>
+
+
+          <p>
+            When deserializing you will be passed back an object of type that you passed it during serialization so in the case of the StbTransform component you will receive an object of type <strong>TransformSaveData</strong>. This will be of type object so it will need to be cast to the correct type like is done in the example below. From there the data is gathered from the object and applied to their respective places and in this case to the transform of the gameobject.
+          </p>
+          <p>
+
+            <img src="images/image4.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h2>Saving Components</h2>
+
+
+          <p>
+            There are a variety of saving components for specific components in unity. These components will hold a reference to their specific type and save the data on them. These components can be replicated with the <strong><a href="#custom-save-component-3">Custom Save Component</a></strong>. However these have been set up for common components as they can be easier to understand for most people. All the components are prefixed with “Stb” for ease of finding. If there isn’t a saving component equivalent for a component you want to save you should use the StbCustomComponent or create your own.
+          </p>
+          <ul>
+
+            <li><strong>StbCamera</strong>
+
+            <li><strong>StbCanvasGroup </strong>- Saves data for the canvas group such as blocking raycasts and alpha.
+
+            <li><strong>StbDropdown</strong> - Saves data for a UI dropdown component such as it’s currently selected element.
+
+            <li><strong>StbGameObjectActive</strong> - Save whether an object is currently active or not.
+
+            <li><strong>StbImage</strong>
+
+            <li><strong>StbNavMeshAgent - </strong>Stores data from a nav mesh agent such as velocity, speed, target etc.
+
+            <li><strong>StbLight </strong>- Saves data about a light such as type, range, intensity etc.
+
+            <li><strong>StbRigidBody </strong>- Saves RigidBody data such as its current velocity.
+
+            <li><strong>StbRigidBody2D</strong> - Saves RigidBody2D data such as its current velocity.
+
+            <li><strong>StbSlider</strong> - Saves the current value of a UI Slider.
+
+            <li><strong>StbSpriteRenderer</strong>
+
+            <li><strong>StbTextField</strong> - Saves the current text of a text field as well as some settings.
+
+            <li><strong>StbToggle</strong> - Saves the current value of a UI Toggle.
+
+            <li><strong>StbTransform</strong> - Saves the current transform values of an object.
+            </li>
+          </ul>
+          <h2>Custom Save Component</h2>
+
+
+          <p>
+            The custom save component is a very useful tool within the library. It allows you to save any data on any custom component you may have created. It allows you to save data with the need to write no or minimal code. <strong>Please Note: </strong>It may not be the most efficient or the best way to save data but it is extremely useful.
+          </p>
+          <p>
+            The way it works is through reflection. It will analyze the code of the components it has serialized in the inspector and search through the target component until it finds all the fields and properties it can save. You can then select through all these fields and properties and to choose the ones in which you want to save their data. When the game is saved it will then save all the current data of these fields/properties. When loaded it will set the data to the saved data.
+          </p>
+          <p>
+            Below you can see an example of how it is set up to save the data of a Rigidbody and a BoxCollider. <strong>Please Note:</strong> The component is set up to target more than one component, so there's no harm in doing so. To get it to work follow these steps.<br>1. Add the component a gameobject (it’s recommended but not necessary to have it on the same game object as the component you are trying to save).
+          </p>
+          <p>
+            2. Then click the “add component” button.
+          </p>
+          <p>
+            3. Drag the component into the component reference field.
+          </p>
+          <p>
+            4. Click the add field button. A drop down box should appear.
+          </p>
+          <p>
+            5. From the dropdown box you can select the field you would like to save.
+          </p>
+          <p>
+            When the game now saves it should save the field you selected and load it when you load the game. Below is an example of a setup.
+          </p>
+          <p>
+
+            <img src="images/image5.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h2>Save Migration</h2>
+
+
+          <p>
+            Save migration in Save Toolbox is a very basic implementation when we load a save we try to migrate it if necessary. There is an example save migrator, in the example we check which version of the save data it is, which we will increment everytime we change how the save data is organized. If the version is different in the example we take all the TransformSaveDatas and reset their values itf it’s a different version. Of course this implementation has no real use but it is an example of how you can implement your own changes. E.g. You have a save with player data and in that data you have a field called walk speed, now you changed the player to only be able to fly now but you want to migrate saves so their old walk speed is proportional to their new fly speed. This is the system you would use. In the example I am using the built in metadata save version but realistically you can set up your own versioning system if desired. To set the current save migrator make sure to set the public static “saveMigrator” field on the SaveSystem.cs to your own desired migrator.
+          </p>
+          <p>
+
+            <img src="images/image6.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <h2>How Saving/Loading Pipelines Work</h2>
+
+
+          <p>
+            This section is specifically regarding how the saving pipeline works from a basic point of view. Below is a flowchart representation of what happens.
+          </p>
+          <h2>Saved Callback Handlers</h2>
+
+
+          <p>
+            Sometimes you save the game data and you want a callback for this in your code that isn’t loaded itself. E.g. You want a popup to appear when you have saved your game data. If you want your class to receive the callback, make sure it implements the interface IStbSavedCallbackHandler, it will force you to implement the function HandleDataSaved which passes the save data as a parameter. Whenever you save the game data this function will be called. This will work straight away with MonoBehaviours but for non-MonoBehaviours they need to self subscribe to a static list and unsubscribe themselves from the list when they should no longer receive the callback. There is a NonMonoBehaviourCallbackExample.cs script.
+          </p>
+          <p>
+
+            <img src="images/image7.png" width="" alt="alt_text" title="image_tooltip">
+
+          </p>
+          <p>
+            There is also a IStbLoadedCallback handler which works the same but for loading instead of saving.
+          </p>
+          <h2>FormerlySerializedAs</h2>
+
+
+          <p>
+            If you change the class or struct name of a piece of data that you want to save then you must use the StbFormerlySerializeAs attribute on the class/struct in order to ensure that older saves work. This would only really be necessary if you didn’t want older saves to break. There is also the possibility of using <a href="#save-migration-4">SaveMigration</a> to rectify this but this should also be a valid solution. In order for this to work you need to attach the attribute to the class/struct with the old assembly path as a parameter. This will then be able to be checked against the old save data to find out what data structure it was prior. If you are unsure what the old assembly path is, you can find it in the old save data if it is JSON and readable or you can use the function AssemblyQualifiedName on a type e.g. <strong>“typeof(OldDataType).AssemblyQualifiedName”.</strong>
+          </p>
+          <p>
+            Below is an example of how it can be implemented.
+          </p>
+          <p>
+
+          </p>
+          <h2>File Types</h2>
+
+
+          <p>
+            There are currently 2 file types available to save to: JSON or binary. Below find a table describing the advantages and disadvantages of the file types. The file type can be set in the SaveSettings file or in Tools -> SaveToolbox.
+          </p>
+
+          <table>
+            <tr>
+              <td><strong>JSON</strong>
+              </td>
+              <td><strong>BINARY</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Human readable, good if you want to allow for yourself or others to read through a save file to find errors or to edit their save by changing values.
+              </td>
+              <td>Not human readable. Good if you don’t want people to easily edit the file. Although encryption is also recommended if you want to prevent edits.
+              </td>
+            </tr>
+            <tr>
+              <td>Typically larger files.
+              </td>
+              <td>Typically smaller files.
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td>Binary tends to be slightly quicker when serializing but this will only be noticeable in extreme cases.
+              </td>
+            </tr>
+          </table>
+
+
+          <h2>Encryption</h2>
+
+
+          <p>
+            There is encryption built into the tool that allows you to encrypt any data saved and decrypt any data loaded from disk. There are two different forms of encryption: Xor & Aer. <strong>Please note: </strong>If you have chosen JSON as your file type to save for its readability it will lose its readability if it is encrypted. I would recommend reading up on both encryption methods but otherwise I have created a simple table to outline the advantages and disadvantages below.
+          </p>
+
+          <table>
+            <tr>
+              <td><strong>Xor</strong>
+              </td>
+              <td><strong>Aes</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Uses an encryption keyword.
+              </td>
+              <td>Uses an encryption keyword and an initialization vector.
+              </td>
+            </tr>
+            <tr>
+              <td>Simpler and easy to understand. Uses bitwise operations.
+              </td>
+              <td>Complex and harder to understand.
+              </td>
+            </tr>
+            <tr>
+              <td>Efficient as it is only doing bitwise operations.
+              </td>
+              <td>More taxing on performance although it shouldn’t make much of a difference in most usual cases.
+              </td>
+            </tr>
+            <tr>
+              <td>Weaker security, if someone has the keyword it can be decrypted.
+              </td>
+              <td>Strong security.
+              </td>
+            </tr>
+          </table>
+
+
+          <h2>Compression</h2>
+
+
+          <p>
+            Currently there is only one form of compression, GZip. GZip is a common form of compression. Feel free to use this to make your save files smaller, may not be necessary with already small save files. Feel free to use encryption <strong>AND </strong>compression on your save data if necessary. <strong>Please note: </strong>If you have chosen JSON as your file type to save for its readability it will lose its readability if it is compressed.
+          </p>
+          <h2>Save Slots</h2>
+
+
+          <p>
+            The concept of a save slot is to define different instances of saves in different save slots. The SaveToolbox save slots are directory based which means each save slot has its own folder. Whenever you save a game instance it will request a slot index, it defaults to 0 but if it is less than 0 it will not save the data in any slot.
+          </p>
+          <h3>Non-Slot Save Settings</h3>
+
+
+          <p>
+            Sometimes you may save data without a save slot. You will have to do this explicitly when you are saving by not providing a slot index or a slot index less than 0 in the save data argos when you create a save data. This is useful for data you will want to persist between different save instances of a game such as player settings.
+          </p>
+          <h2>Save Settings</h2>
+
+
+          <p>
+            There are various save settings that can be adjusted. Please understand that these settings will only be implemented on saves to the game and not any save data you create custom through the SaveToolbox pipeline (they can be set in the saveDataArgs instead). Here is a list of all the settings and what they do:
+          </p>
+          <ul>
+
+            <li><strong>Save Data Name</strong> - The name that the file will save with.
+
+            <li><strong>Folder Path - </strong>The folder path of the save file, this originates from the Application.PersistantDataPath.
+
+            <li><strong>File Type - </strong>The file type the save data will be saved as.
+
+            <li><strong>Encryption Type - </strong>The type of encryption to be used. Xor is a simpler form of encryption that uses a key. Aes is recommended, it also uses a key as well as an initialization vector for additional security (save toolbox can generate this for you).
+
+            <li><strong>Encryption Keyword - </strong>The keyword that will be used for the encrypting of the save data. It is used to decrypt and encrypt the data, make sure to keep it secret.
+
+            <li><strong>Initialization Vector - </strong>Another layer of security for Aes encryption. Save Toolbox generates this for you, you can regenerate it by pressing the regenerate button below the field.
+
+            <li><strong>Compression Type - </strong>The type of compression the file will have. Compression allows for smaller file sizes.
+
+            <li><strong>Should Save Scene - </strong>Do you want SaveToolbox to handle the saving and loading of current scenes? If selected when a file is loaded it will find all necessary scenes and load them.
+
+            <li><strong>Scene Lookup - </strong>If we are saving the scenes, we need a way to store reference to the scene. Build index means we find the scene by build index, changing this in build settings after a save has been created can lead to losing reference to the scene. Path means we find the scene by the asset path, moving the scene asset can lead to the toolbox not being able to find the scene.
+
+            <li><strong>Asynchronous Saving - </strong>Allows saving and loading want to be done over multiple frames to avoid large lag spikes
+
+            <li><strong>Lowest Acceptable Frame Rate - </strong>If asynchronous saving is enabled, what is the lowest acceptable frame rate.
+
+            <li><strong>Logging Enabled - </strong>Save Toolbox has built in logs for when save or load is executed etc, if this is enabled it will display those logs in the console.
+            </li>
+          </ul>
+          <h2>Loadable Object Database</h2>
+
+
+          <p>
+            The loadable object database is a scriptable object singleton that holds all references to any prefab that can be loaded into a scene at runtime. Any object that is put into the loadable object database must have the LoadableObject.cs component attached to it. To update the database so it has all current loadable objects in the database you can find the database in the project “LoadableObjectDatabase.asset” or you can go to Window -> Save Toolbox open the loadable object database tag. Once you have either window open, you can select refresh database, this will look for any loadable objects that are not currently in the database. When a loadable object is put into the database a hidden loadable object id is set to the index of where it is in the database list. If you are having errors finding any new loadable objects you can press rebuild database, <strong>please note: </strong>Rebuilding a database may invalidate any older saves that worked off of the old database values. If you have left over old or missing prefabs in the database that you no longer want there, it may not be worth rebuilding to remove them if you have already released your game as it could invalidate old saves.
+          </p>
+          <h2>Custom Save Data</h2>
+
+
+          <p>
+            Along with the ability to save the game state you can also pass in custom objects to save manually. This can be done by calling the function on the SaveSystem.cs. Let’s say you are saving your game data as json but you have a bunch of world position vectors that you would not like to save in json, but instead binary. You can pass this list of positions to the save system as follows.
+          </p>
+          <p>
+            <strong>SaveSystem.Instance.TryCreateSaveData(positionList, saveDataArgs);</strong>
+          </p>
+          <p>
+            The saveDataArgs will need to be created with all your desired settings for saving this object. <strong>Please Note: </strong>because this isn’t a game save data and instead custom it will not use the default save settings set in the asset SaveSettings instead you have to define these yourself in the saveDataArgs. The loading will also need to use the same settings. This can be done:
+          </p>
+          <p>
+            <strong>SaveSystem.Instance.LoadSaveData&lt;List&lt;Vector3>>(saveDataArgs);</strong>
+          </p>
+          <p>
+            The above function call would try to load the custom save data of type List&lt;Vector3>. This should be replaced with the type you are trying to load.
+          </p>
+          <h2>Scene Saving</h2>
+
+
+          <p>
+            There is a setting in the save setting whether or not you would like to save the current scenes in the save data. If you select yes when the game is loaded, it will load all previous scenes at save time and it will also put all old loadable objects in the correct scenes it will also find all data to deserialize and put them in the correct objects. This will also work with multiple scene levels that use additive scenes.
+          </p>
+          <h2>Extending Serializers</h2>
+
+
+          <h3>Extending Json Serializer</h3>
+
+
+          <p>
+            The Json Serializer has 4 functions you can override to edit the functionality of how it serializers:
+          </p>
+          <ul>
+
+            <li><strong>Bool CanSerialize(Type type): </strong>This function is what determines whether or not the serializer should go ahead and serialize a type like this. It takes a parameter of type and then inside here you can check the type against any you want to add custom serialization for and if it is of that type return true.
+              <img src="images/image8.png" width="" alt="alt_text" title="image_tooltip">
+
+
+            <li><strong>JsonBaseNode Serialize(object objectValue): </strong>This the function in which you can override how the type that can be serialized is serialized. In this scenario we need to return a JsonBaseNode. These are just nodes that can hold object data in different ways. They each have a key and a value, with the value that is of type object.
+              <img src="images/image9.png" width="" alt="alt_text" title="image_tooltip">
+
+
+            <li><strong>object Deserialize(Type type, compoundNode): </strong>This is how you will deserialize an object. You will receive a compound node and you can get the other nodes off of it by getting the children with the correct label. Below is an example of how it is done. Make sure to return an object of the intended type.
+            </li>
+          </ul>
+          <h3>Extending Binary Serializer</h3>
+
+
+          <p>
+            Extending the binary serializer is a little different to extending the JSON serializer due to the binary serializer using the built in Runtime.Serialization within Unity. In order to change the serializer you need to have a custom BinaryFormatter which is a type that can be set in the SaveSystem. There is a public static binarySerializer you can assign this to your own custom serializer. For it to have custom functionality in terms of what it will serialize and how it needs to have a custom BinaryFormatter which in turn can have a custom SurrogateSelector which is used to define what can be serialized and how which can be passed in through the constructor, example below:
+          </p>
+          <p>
+            In your custom SurrogateSelector you can define which types can be serialized overriding the GetSurrogate function. In the overridden function you can return a custom ISerializationSurrogate for a specific type. When providing functionality on how to serialize a specific type it works somewhat similarly to the JSON one. You get an object that contains label and values.. Example below.
+          </p>
 
 </article>
 
